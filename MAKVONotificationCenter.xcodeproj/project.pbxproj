@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD9E9A5D15F7D372009E92AF /* MAKVONotificationCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = C26362D90EA6BDF00069A639 /* MAKVONotificationCenter.h */; settings = {ATTRIBUTES = (); }; };
 		FA0884F314E529D2001DDF7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAEC6DA214875C66000587CA /* Foundation.framework */; };
 		FA0884F414E529D3001DDF7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAEC6DA214875C66000587CA /* Foundation.framework */; };
 		FA3E685714E303F900DA720D /* MAKVONotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = C26362DA0EA6BDF00069A639 /* MAKVONotificationCenter.m */; };
@@ -175,6 +176,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD9E9A5D15F7D372009E92AF /* MAKVONotificationCenter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,7 +520,9 @@
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/MAKVONotificationCenter_iOS.dst;
 				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = ../../include/MAKVONotificationCenter/Private;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = ../../include/MAKVONotificationCenter;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -531,7 +535,9 @@
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/MAKVONotificationCenter_iOS.dst;
 				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = ../../include/MAKVONotificationCenter/Private;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = ../../include/MAKVONotificationCenter;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
